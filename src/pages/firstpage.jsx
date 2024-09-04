@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './pages.css';
-import backgroundImage from './back.jpg'; // Update path accordingly
+import backgroundImage from './back.jpg'; 
 
 const Firstpage = () => {
     return (

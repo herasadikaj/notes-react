@@ -40,27 +40,27 @@ export default function Register() {
   function validateForm() {
     const errors = {};
     
-    // Email validation
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email format
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     if (!enteredValues.email) {
       errors.email = 'Email is required';
     } else if (!emailPattern.test(enteredValues.email)) {
       errors.email = 'Invalid email format';
     }
     
-    // Password validation
+   
     if (!enteredValues.password) {
       errors.password = 'Password is required';
     } else if (enteredValues.password.length < 8) {
       errors.password = 'Password must be at least 8 characters long';
     }
     
-    // First Name validation
+   
     if (!enteredValues.firstName) {
       errors.firstName = 'First Name is required';
     }
     
-    // Last Name validation
+  
     if (!enteredValues.lastName) {
       errors.lastName = 'Last Name is required';
     }
